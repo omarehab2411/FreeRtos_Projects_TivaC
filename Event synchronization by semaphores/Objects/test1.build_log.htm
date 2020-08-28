@@ -1,0 +1,154 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: omar ehab, miu, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.27.1.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\omar ehab\Desktop\WORKSPACE\uvision\freertos\Event synchronization\test1.uvprojx
+Project File Date:  08/27/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_TM4C123.s...
+compiling gpio.c...
+gpio.h(143): warning:  #1-D: last line of file ends without a newline
+  #endif
+gpio.c(438): warning:  #188-D: enumerated type mixed with another type
+  	NVIC_SetPriority(irqNumber,priority);
+gpio.c(439): warning:  #188-D: enumerated type mixed with another type
+  	NVIC_EnableIRQ(irqNumber);
+gpio.c(446): warning:  #188-D: enumerated type mixed with another type
+  	NVIC_SetPriority(irqNumber,priority);
+gpio.c(447): warning:  #188-D: enumerated type mixed with another type
+  	NVIC_EnableIRQ(irqNumber);
+gpio.c(456): warning:  #188-D: enumerated type mixed with another type
+  	NVIC_SetPriority(irqNumber,priority);
+gpio.c(457): warning:  #188-D: enumerated type mixed with another type
+  	NVIC_EnableIRQ(irqNumber);
+gpio.c(466): warning:  #188-D: enumerated type mixed with another type
+  	NVIC_SetPriority(irqNumber,priority);
+gpio.c(467): warning:  #188-D: enumerated type mixed with another type
+  	NVIC_EnableIRQ(irqNumber);	
+gpio.c: 9 warnings, 0 errors
+compiling main.c...
+gpio.h(143): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c: 1 warning, 0 errors
+compiling system_TM4C123.c...
+compiling croutine.c...
+compiling freertos_evr.c...
+compiling event_groups.c...
+compiling list.c...
+compiling heap_1.c...
+compiling port.c...
+compiling stream_buffer.c...
+compiling queue.c...
+compiling tasks.c...
+compiling timers.c...
+linking...
+Program Size: Code=10376 RO-data=652 RW-data=124 ZI-data=11092  
+".\Objects\test1.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS-FreeRTOS.10.3.1.pack
+                ARM.CMSIS-FreeRTOS.10.3.1
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: FreeRTOS Version: 10.3.1
+   * Component: Core Variant: Cortex-M Version: 10.3.1
+   * Component: Coroutines Version: 10.3.1
+   * Component: Event Groups Version: 10.3.1
+   * Component: Heap Variant: Heap_1 Version: 10.3.1
+   * Component: Message Buffer Version: 10.3.1
+   * Component: Stream Buffer Version: 10.3.1
+   * Component: Timers Version: 10.3.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\RTOS
+  .\RTE\_Target_1
+  C:\Users\omar ehab\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include
+  C:\Users\omar ehab\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\include
+  C:\Users\omar ehab\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F
+  C:\Users\omar ehab\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\omar ehab\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM.FreeRTOS::RTOS:Config:FreeRTOS:10.3.1
+      Include file:  Config\ARMCM\FreeRTOSConfig.h
+
+   * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.3.1
+      Include file:  Source\include\task.h
+      Source file:   Source\tasks.c
+      Include file:  Source\include\FreeRTOS.h
+      Source file:   Source\list.c
+      Include file:  Source\include\queue.h
+      Include file:  Source\include\semphr.h
+      Source file:   Source\portable\RVDS\ARM_CM4F\port.c
+      Source file:   Source\queue.c
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
+
+   * Component: ARM.FreeRTOS::RTOS:Coroutines:10.3.1
+      Include file:  Source\include\croutine.h
+      Source file:   Source\croutine.c
+
+   * Component: ARM.FreeRTOS::RTOS:Event Groups:10.3.1
+      Include file:  Source\include\event_groups.h
+      Source file:   Source\event_groups.c
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_1:10.3.1
+      Source file:   Source\portable\MemMang\heap_1.c
+
+   * Component: ARM.FreeRTOS::RTOS:Message Buffer:10.3.1
+      Include file:  Source\include\message_buffer.h
+      Source file:   Source\stream_buffer.c
+
+   * Component: ARM.FreeRTOS::RTOS:Stream Buffer:10.3.1
+      Include file:  Source\include\stream_buffer.h
+      Source file:   Source\stream_buffer.c
+
+   * Component: ARM.FreeRTOS::RTOS:Timers:10.3.1
+      Include file:  Source\include\timers.h
+      Source file:   Source\timers.c
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\system_TM4C123.c
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
